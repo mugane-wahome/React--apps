@@ -1,0 +1,49 @@
+.display{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    display: grid;
+    grid-template-rows: auto;
+    background-color:wheat;
+    border-radius: 20px;
+}
+img{
+    width: 200px;
+    height: 300px;
+    border-radius: 30px;
+}
+.paragraphs{
+    
+    
+    justify-content: space-around;
+    width: 200px;
+    height: 100px;
+    color: crimson;
+    font-size: large;
+    
+}
+
+#cart{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.movies{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+    
+}
