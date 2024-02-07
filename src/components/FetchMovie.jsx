@@ -1,12 +1,14 @@
-// FetchMovie.jsx
 import React, { useState, useEffect } from "react";
 import SearchBox from "./SearchBox";
 import "./FetchMovie.css";
+
 const FetchMovie = ({ addToCart }) => {
   const [data, setData] = useState({
     results: [],
   });
   const [searchTerm, setSearchTerm] = useState("");
+  const [cartCount, setCartCount] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   const getData = async () => {
     // Replace the placeholder URL with your actual API endpoint
@@ -27,12 +29,23 @@ const FetchMovie = ({ addToCart }) => {
   };
 
   const handleAddToCart = () => {
+    setCartCount((prevCount) => prevCount + 1);
     addToCart();
+    setCartItems((prevItems) => [...prevItems, data.results]); // You might need to modify this based on your actual data structure
+  };
+
+  const handleCartCountClick = () => {
+    // Display cart items in a modal or alert
+    window.alert(`Items in Cart: ${JSON.stringify(cartItems)}`);
   };
 
   return (
     <div className="display">
+      <div className="count"><p onClick={handleCartCountClick} style={{ cursor: "pointer" }}>
+        Cart Count: {cartCount}
+      </p></div>
       <h1>Get All Your Favourite Movies Here</h1>
+      
       <SearchBox onSearch={handleSearch} />
       <div className="movies">
         {data.results.map((movie) => (
@@ -42,10 +55,8 @@ const FetchMovie = ({ addToCart }) => {
               alt={movie.title}
             />
             <div className="paragraphs">
-              
               <p>{movie.release_date}</p>
-              <p>{movie.vote_average}</p>
-              <p>{movie.popularity}</p>
+              
               <p>{movie.id}</p>
             </div>
             <button id="cart" onClick={handleAddToCart}>
