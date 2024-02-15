@@ -31,7 +31,7 @@ const FetchMovie = ({ addToCart }) => {
   const handleAddToCart = () => {
     setCartCount((prevCount) => prevCount + 1);
     addToCart();
-    setCartItems((prevItems) => [...prevItems, data.results]); // You might need to modify this based on your actual data structure
+    setCartItems((prevItems) => [...prevItems, data.results]);
   };
 
   const handleCartCountClick = () => {
