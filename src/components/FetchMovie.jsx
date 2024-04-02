@@ -11,7 +11,7 @@ const FetchMovie = ({ addToCart }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const getData = async () => {
-    // Replace the placeholder URL with your actual API endpoint
+    
     const apiKey = "d3adc528937c14b4044f9ee3bf46f522";
     const api = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`;
 
