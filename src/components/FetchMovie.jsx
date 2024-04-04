@@ -36,6 +36,7 @@ const FetchMovie = ({ addToCart }) => {
 
   const handleCartCountClick = () => {
     // Display cart items in a modal or alert
+    //ie display all the items in the cart
     window.alert(`Items in Cart: ${JSON.stringify(cartItems)}`);
   };
 
