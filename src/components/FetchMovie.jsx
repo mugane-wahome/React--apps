@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SearchBox from "./SearchBox";
 import "./FetchMovie.css";
-
+// import import "./FetchMovie.css";
 const FetchMovie = ({ addToCart }) => {
   const [data, setData] = useState({
     results: [],
