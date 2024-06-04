@@ -1,0 +1,48 @@
+/* Overall blog list container */
+.blog-list {
+    margin: 0 auto; /* Center the list horizontally */
+    padding: 20px; /* Add some padding */
+  }
+  
+  /* Individual blog post styling */
+  .blog-post {
+    margin-bottom: 20px; /* Add spacing between posts */
+    border: 1px solid #ddd; /* Add a thin border */
+    padding: 15px; /* Add some padding inside the post */
+  }
+  
+  /* Style the blog post image */
+  .blog-post img {
+    width: 100%; /* Make the image fill the width of the post */
+    /* Adjust other image properties as needed (e.g., height, margin) */
+  }
+  
+  /* Style the blog post title */
+  .blog-post h3 {
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 10px; /* Add some space after the title */
+  }
+  
+  /* Style the meta information (author and date) */
+  .blog-post p small {
+    color: #aaa; /* Use a lighter color for meta info */
+    font-size: 0.8em; /* Make the font slightly smaller */
+  }
+  
+  /* Style the post content */
+  .blog-post p {
+    margin-bottom: 10px; /* Add space between paragraphs */
+  }
+  
+  /* Style the "Read More" link */
+  .blog-post a {
+    color: #000; /* Set the link color */
+    text-decoration: none; /* Remove underline from default link styling */
+    font-weight: bold; /* Make the link text bold */
+  }
+  
+  /* Style the hover state of the "Read More" link */
+  .blog-post a:hover {
+    color: #333; /* Change link color on hover */
+  }
+  
