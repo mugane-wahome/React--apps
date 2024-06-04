@@ -3,7 +3,9 @@ import React from 'react';
 const blogPosts = [
   { id: 1, title: 'Post 1 Title', content: 'This is the content of post 1...' },
   { id: 2, title: 'Post 2 Title', content: 'This is the content of post 2...' },
-  // Add more posts here
+  { id: 3, title: 'Post 3 Title', content: 'This is the content of post 3...' },
+  { id: 4, title: 'Post 4 Title', content: 'This is the content of post 4...' },
+  { id: 5, title: 'Post 5 Title', content: 'This is the content of post 5...' },
 ];
 
 const BlogList = () => {
