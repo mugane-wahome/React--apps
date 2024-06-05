@@ -20,8 +20,7 @@
   /* Style the blog post title */
   .blog-post h3 {
     margin-top: 0; 
-    margin-bottom: 10px; /* Add some space after the title */
-  }
+    margin-bottom: 10px;}
   
 
   .blog-post p small {
