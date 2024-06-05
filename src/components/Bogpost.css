@@ -37,9 +37,8 @@
   /* Style the "Read More" link */
   .blog-post a {
     color: #000; /* Set the link color */
-    text-decoration: none; /* Remove underline from default link styling */
-    font-weight: bold; /* Make the link text bold */
-  }
+    text-decoration: none; 
+    font-weight: bold; }
   
  
   .blog-post a:hover {
