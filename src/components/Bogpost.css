@@ -26,7 +26,7 @@
   /* Style the meta information (author and date) */
   .blog-post p small {
     color: #aaa; /* Use a lighter color for meta info */
-    font-size: 0.8em; /* Make the font slightly smaller */
+    font-size: 0.8em;
   }
   
 
