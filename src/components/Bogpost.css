@@ -41,7 +41,7 @@
     font-weight: bold; /* Make the link text bold */
   }
   
-  /* Style the hover state of the "Read More" link */
+ 
   .blog-post a:hover {
     color: #333; /
   }
